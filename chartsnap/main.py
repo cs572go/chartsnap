@@ -7,12 +7,7 @@ from selenium.webdriver.common.keys import Keys
 from datetime import datetime
 import time
 
-def get_chart(
-        ticker,
-        time_interval,
-        time_period,
-        store_location
-):
+def get_chart(ticker, time_interval, time_period, store_location):
     flag = 0
     if time_interval and time_period is None:
         time_interval = '1d'
